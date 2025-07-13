@@ -5,7 +5,635 @@
 	(uuid "afdeb5c5-05ed-4865-aaa9-d6927f7d44aa")
 	(paper "A4")
 	(lib_symbols
-		(symbol "MCU_Module:RaspberryPi_Pico_W"
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ESP32-CAM:ESP32-CAM"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Value" "ESP32-CAM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+				)
+			)
+			(property "Footprint" "ESP32-CAM:ESP32-CAM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "AI-Thinker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "ESP32 ESP32 Transceiver; 802.11 a/b/g/n (Wi-Fi, WiFi, WLAN), Bluetooth® Smart 4.x Low Energy (BLE) Evaluation Board"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/ESP32-CAM/AI-Thinker/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "ESP32-CAM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/ESP32-CAM/AI-Thinker/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "ESP32-CAM_0_0"
+				(rectangle
+					(start -12.7 -10.16)
+					(end 12.7 12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "ESP32-CAM"
+					(at -12.7 15.24 0)
+					(effects
+						(font
+							(size 1.778 1.778)
+						)
+						(justify left bottom)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 10.16 0)
+					(length 5.08)
+					(name "GND@1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 5.08 0)
+					(length 5.08)
+					(name "GPIO3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 2.54 0)
+					(length 5.08)
+					(name "3V3/5V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 0 0)
+					(length 5.08)
+					(name "GND@2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -2.54 0)
+					(length 5.08)
+					(name "GPIO0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "GPIO16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -17.78 -7.62 0)
+					(length 5.08)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 10.16 180)
+					(length 5.08)
+					(name "GPIO4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 7.62 180)
+					(length 5.08)
+					(name "GPIO2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 5.08 180)
+					(length 5.08)
+					(name "GPIO14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 2.54 180)
+					(length 5.08)
+					(name "GPIO15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "GPIO13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -2.54 180)
+					(length 5.08)
+					(name "GPIO12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -5.08 180)
+					(length 5.08)
+					(name "GND@3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 17.78 -7.62 180)
+					(length 5.08)
+					(name "5V"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "P$9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "MCU_Module:RaspberryPi_Pico"
 			(pin_names
 				(offset 0.762)
 			)
@@ -21,7 +649,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "RaspberryPi_Pico_W"
+			(property "Value" "RaspberryPi_Pico"
 				(at 7.62 35.56 0)
 				(effects
 					(font
@@ -30,7 +658,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Module:RaspberryPi_Pico_W_SMD_HandSolder"
+			(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
 				(at 0 -46.99 0)
 				(effects
 					(font
@@ -39,7 +667,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf"
+			(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
 				(at 0 -49.53 0)
 				(effects
 					(font
@@ -48,7 +676,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Versatile and inexpensive wireless microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN; also supports Raspberry Pi Pico 2 W"
+			(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
 				(at 0 -52.07 0)
 				(effects
 					(font
@@ -57,7 +685,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RP2350A M33 RISC-V Hazard3 usb wifi bluetooth"
+			(property "ki_keywords" "RP2350A M33 RISC-V Hazard3 usb"
 				(at 0 0 0)
 				(effects
 					(font
@@ -66,7 +694,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?W?SMD*"
+			(property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?SMD*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -75,7 +703,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "RaspberryPi_Pico_W_0_1"
+			(symbol "RaspberryPi_Pico_0_1"
 				(rectangle
 					(start -19.05 34.29)
 					(end 19.05 -31.75)
@@ -148,7 +776,7 @@
 					)
 				)
 			)
-			(symbol "RaspberryPi_Pico_W_1_1"
+			(symbol "RaspberryPi_Pico_1_1"
 				(pin passive line
 					(at -22.86 22.86 0)
 					(length 3.81)
@@ -1023,37 +1651,890 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 129.032 21.336)
+		(end 180.594 46.99)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 16d80370-18ad-46a7-8978-dd4ae5e2a33e)
+	)
+	(rectangle
+		(start 210.058 16.002)
+		(end 283.21 62.992)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 22359b37-c78b-4d9c-8445-8639e8d47df9)
+	)
+	(rectangle
+		(start 17.78 22.352)
+		(end 108.458 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d903bce9-e29d-4fc6-8b4f-e0f7b1fb87d5)
+	)
+	(text "Doll Eyes"
+		(exclude_from_sim no)
+		(at 167.386 43.18 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "41f2564d-ac9d-4a49-82ac-3744cd145cf5")
+	)
+	(text "Camera Module"
+		(exclude_from_sim no)
+		(at 248.158 58.42 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "5e5d2325-2303-467f-b3f6-4deb869f8310")
+	)
+	(text "Orpheus Pico\n"
+		(exclude_from_sim no)
+		(at 90.424 112.776 0)
+		(effects
+			(font
+				(size 3 3)
+			)
+		)
+		(uuid "84d32259-2449-4203-b04f-4df50c0b82d5")
+	)
+	(junction
+		(at 153.67 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09dcfc3e-4b3f-4a18-958c-b73c7cbfc1e5")
+	)
+	(wire
+		(pts
+			(xy 279.4 44.45) (xy 279.4 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e1454c-b763-4240-8062-dbeec9000d66")
+	)
+	(wire
+		(pts
+			(xy 147.32 29.21) (xy 153.67 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0de7a95d-a4f8-4f19-bfb4-0388d8588105")
+	)
+	(wire
+		(pts
+			(xy 214.63 40.64) (xy 229.87 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bb72f86-798c-4572-be74-a0353df5dee2")
+	)
+	(wire
+		(pts
+			(xy 214.63 30.48) (xy 229.87 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5387e3ae-a77c-4260-b995-f7c1b1e68ab4")
+	)
+	(wire
+		(pts
+			(xy 153.67 29.21) (xy 153.67 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83fa4f8b-29b7-4ad0-845c-0a19e81f8f57")
+	)
+	(wire
+		(pts
+			(xy 265.43 44.45) (xy 279.4 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87e6a3eb-0fb1-4c6a-9744-5d32a00e5500")
+	)
+	(wire
+		(pts
+			(xy 46.99 30.48) (xy 46.99 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89532cf3-78b4-4f9d-8b92-0f60b0e02df9")
+	)
+	(wire
+		(pts
+			(xy 153.67 33.02) (xy 157.48 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b7cd8fd-78cc-47b5-a96e-02e8f1d2d68f")
+	)
+	(wire
+		(pts
+			(xy 153.67 36.83) (xy 153.67 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f4fb157-36b8-49b6-8f30-f2e130a9ef39")
+	)
+	(wire
+		(pts
+			(xy 147.32 36.83) (xy 153.67 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7fa6ed2-4291-4421-9a20-d37b557c19a1")
+	)
+	(wire
+		(pts
+			(xy 74.93 95.25) (xy 81.28 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9adc100-7cf3-4672-ba97-1808a75558f3")
+	)
+	(wire
+		(pts
+			(xy 265.43 44.45) (xy 265.43 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1e65656-4221-410b-99e5-fa6cad6512e2")
+	)
+	(wire
+		(pts
+			(xy 265.43 48.26) (xy 271.78 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2c0b9b6-6e52-460c-831c-b30c911df264")
+	)
+	(global_label "CAM-RX"
+		(shape input)
+		(at 29.21 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0af00854-c4be-49a6-8451-593bb4dcbc80")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.3629 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAM-RX"
+		(shape input)
+		(at 229.87 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "32ef1c8c-8b21-4a09-aa1e-543b525f7a5a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.0229 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAM-TX"
+		(shape input)
+		(at 229.87 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41b9a548-70ae-4ed1-9473-d9628ce88bc3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.3253 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED1"
+		(shape input)
+		(at 29.21 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4b7a4d01-4bc9-4f5b-abe3-d3c77d98ddc0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.5682 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED1"
+		(shape input)
+		(at 139.7 29.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d7991d9-c4ca-4e95-9270-f10a8f6a8ab3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.0582 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED2"
+		(shape input)
+		(at 29.21 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8ba80da7-c8fd-4222-bb3d-177d51156c1f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.5682 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED2"
+		(shape input)
+		(at 139.7 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b6bb9517-0877-49cc-b142-2b267b606aa1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.0582 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAM-TX"
+		(shape input)
+		(at 29.21 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f0a2ea79-2c85-4120-bd9d-dd7a3c78103e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.6653 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
-		(lib_id "MCU_Module:RaspberryPi_Pico_W")
-		(at 88.9 77.47 0)
+		(lib_id "Device:LED")
+		(at 143.51 36.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e4c1a08-f056-40bc-b938-01c111823d49")
+		(property "Reference" "D2"
+			(at 143.51 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 143.51 39.624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 143.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "748e7929-4e35-4059-80ae-3cfd189465ff")
+		)
+		(pin "2"
+			(uuid "abb36cae-c60c-43a9-be56-4ad7ce333aca")
+		)
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ESP32-CAM:ESP32-CAM")
+		(at 247.65 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f40be03-133e-4d94-84b3-9902de91ddc9")
+		(property "Reference" "U1"
+			(at 247.65 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP32-CAM"
+			(at 247.65 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "ESP32-CAM:ESP32-CAM"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "AI-Thinker"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "ESP32 ESP32 Transceiver; 802.11 a/b/g/n (Wi-Fi, WiFi, WLAN), Bluetooth® Smart 4.x Low Energy (BLE) Evaluation Board"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ESP32-CAM/AI-Thinker/view-part/?ref=snap"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "ESP32-CAM"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/ESP32-CAM/AI-Thinker/view-part/?ref=eda"
+			(at 247.65 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "P$1"
+			(uuid "2c8e05d8-c94c-437c-b80f-dd29a41c48ea")
+		)
+		(pin "P$2"
+			(uuid "140fb443-b794-4a32-b5d8-a2c03b831975")
+		)
+		(pin "P$3"
+			(uuid "577797b5-0149-43f9-a620-3d9f503988e2")
+		)
+		(pin "P$4"
+			(uuid "2f168d83-6bd8-4fbc-a1dc-4165ebddfb21")
+		)
+		(pin "P$5"
+			(uuid "cd24ebbe-2efb-4076-aca2-50f2c6eaa9dc")
+		)
+		(pin "P$6"
+			(uuid "bea8eddc-9a5f-4107-915f-8156b6b2f759")
+		)
+		(pin "P$7"
+			(uuid "281e4d43-bdf8-4412-b5c2-8f18fca11115")
+		)
+		(pin "P$8"
+			(uuid "6d4853f0-b952-4fe6-8347-3b75fc061501")
+		)
+		(pin "P$16"
+			(uuid "518f0504-bede-48c1-acba-8017d99be651")
+		)
+		(pin "P$15"
+			(uuid "4f83dd10-0f6c-44f4-bfbb-c9cc774d2faa")
+		)
+		(pin "P$14"
+			(uuid "13e6cce7-8b6d-4e56-89d6-2ddb5743106f")
+		)
+		(pin "P$13"
+			(uuid "8bc63009-8ce2-4247-8da2-eb5ae3107a43")
+		)
+		(pin "P$12"
+			(uuid "19cca5b9-10c3-4a53-a1ba-6934d358da0d")
+		)
+		(pin "P$11"
+			(uuid "806a42d1-0d29-4da3-8a14-e8faa4ae7eaa")
+		)
+		(pin "P$10"
+			(uuid "7798b3d2-c0ae-4f47-b33d-0403a2cc5328")
+		)
+		(pin "P$9"
+			(uuid "9ab876fc-c212-4c31-8f7c-6ba65f8e1968")
+		)
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 214.63 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "26f68dfe-e38f-44ba-b66e-3561fd083827")
-		(property "Reference" "A1"
-			(at 91.0433 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "orpheus pico"
-			(at 91.0433 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Module:RaspberryPi_Pico_W_SMD_HandSolder"
-			(at 88.9 124.46 0)
+		(uuid "1c6f7b26-595c-4a03-bd77-b0d726d853bb")
+		(property "Reference" "#PWR04"
+			(at 214.63 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1061,8 +2542,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheets.raspberrypi.com/picow/pico-w-datasheet.pdf"
-			(at 88.9 127 0)
+		(property "Value" "GND"
+			(at 214.63 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1070,8 +2559,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive wireless microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN; also supports Raspberry Pi Pico 2 W"
-			(at 88.9 129.54 0)
+		(property "Datasheet" ""
+			(at 214.63 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1079,130 +2568,744 @@
 				(hide yes)
 			)
 		)
-		(pin "38"
-			(uuid "9c7ce4a4-1a14-4e0a-aa3b-0274df294cf8")
-		)
-		(pin "22"
-			(uuid "b1d0359b-6ad1-4208-975c-c0fae6c38cb5")
-		)
-		(pin "24"
-			(uuid "1a71de22-1e69-4aeb-8ffc-9b47dc549bc9")
-		)
-		(pin "25"
-			(uuid "38f7bc70-7937-4849-9d56-6b17685fed79")
-		)
-		(pin "26"
-			(uuid "31a66f3a-5443-4628-a97a-62b8c82cfd0f")
-		)
-		(pin "27"
-			(uuid "41f9413a-9755-445d-be51-92961020b668")
-		)
-		(pin "29"
-			(uuid "67bb95a5-9326-4854-beca-3d4234b0d5a5")
-		)
-		(pin "35"
-			(uuid "94718756-bf3e-4e85-8d45-af95da64dedc")
-		)
-		(pin "31"
-			(uuid "a448013b-bf96-48fa-8401-03219386a915")
-		)
-		(pin "32"
-			(uuid "b8ca1c71-e8ea-4008-b953-8ec6662092aa")
-		)
-		(pin "34"
-			(uuid "c7e3fded-4278-4b7d-8039-11e389d6cd52")
-		)
-		(pin "36"
-			(uuid "a4f40636-2ba6-4d19-bcf9-043d06f9644d")
-		)
-		(pin "21"
-			(uuid "dc7e2e39-9961-4ddc-95eb-789671629ddc")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "414b5b75-b3da-438c-b2d2-299efe82a5ea")
+			(uuid "ff55423f-8730-4525-9723-69252f40af4f")
 		)
-		(pin "15"
-			(uuid "98f971c1-04e0-4f8a-8446-31b36573c7e7")
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
 		)
-		(pin "8"
-			(uuid "94180fab-230f-4ea7-8976-5bab35667298")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 214.63 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "259392ed-9387-45b6-8a2b-c66981e8e981")
+		(property "Reference" "#PWR05"
+			(at 214.63 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "33"
-			(uuid "24a72b3f-34db-4d7c-a7dc-ec99504e85e9")
+		(property "Value" "GND"
+			(at 214.63 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "16"
-			(uuid "a8f6f4f3-9fbc-4630-8427-16624b2173c9")
+		(property "Footprint" ""
+			(at 214.63 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "17"
-			(uuid "210088af-850b-417e-aec7-da38a1f886ab")
+		(property "Datasheet" ""
+			(at 214.63 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "14"
-			(uuid "9b9025a5-492e-4ea9-ba70-ac5f3aef2723")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92cb4b3a-351e-47f3-a550-f61ffe34bbba")
+		)
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 143.51 29.21 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "65613b42-fe53-4bc1-895c-cbcb25a02019")
+		(property "Reference" "D1"
+			(at 143.51 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 143.51 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 143.51 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 143.51 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1145bde8-ee2e-4f74-a65a-773318894ff5")
 		)
 		(pin "2"
-			(uuid "1f4168c4-49d5-4015-9bf9-0a24684413c6")
+			(uuid "5636f14a-84cc-4983-8ed9-4092120f595a")
 		)
-		(pin "12"
-			(uuid "e5e07b75-b08e-4739-a22f-df37312c61fe")
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 		)
-		(pin "39"
-			(uuid "222605a8-9564-4f03-a00b-dc2b021c42f7")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bf1d3dd-e34c-4db1-90c2-a9e3a6cdcc15")
+		(property "Reference" "#PWR03"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "6"
-			(uuid "b4acb0b9-cfb7-4b7a-9993-c04e2fb0329b")
+		(property "Value" "GND"
+			(at 81.28 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "18"
-			(uuid "fcec0fc7-5c97-4b9f-8b34-7498003fcbfc")
+		(property "Footprint" ""
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "13"
-			(uuid "627293f0-5ec2-4a32-afd1-85fa1d98a1f1")
+		(property "Datasheet" ""
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "3"
-			(uuid "b83ccb7d-bee3-4feb-91d3-15507d693c38")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "5"
-			(uuid "d260ebf3-95dc-4688-9828-75b1759b8546")
+		(pin "1"
+			(uuid "952a3982-3e92-497c-bb6c-5e41a4ac0522")
 		)
-		(pin "11"
-			(uuid "30b0caaa-3fed-485e-bc4e-7b9b9e917920")
+		(instances
+			(project "orpholl"
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
 		)
-		(pin "10"
-			(uuid "7cdc7358-ccaa-4a81-b739-3361a852ecde")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c29b779-395d-4f63-abcd-a23facd2d191")
+		(property "Reference" "#PWR02"
+			(at 52.07 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "4"
-			(uuid "949bbb18-573d-4bdb-8651-2c7e6475fa38")
+		(property "Value" "GND"
+			(at 52.07 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "40"
-			(uuid "6eec2de9-f1ec-49ee-b0d2-4a9377d88c59")
+		(property "Footprint" ""
+			(at 52.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "9"
-			(uuid "80417744-28df-4e34-8523-8d2b9d56e90c")
+		(property "Datasheet" ""
+			(at 52.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "37"
-			(uuid "d6e6720b-fd80-4580-a468-03e4c86bbb09")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "19"
-			(uuid "d2507885-6fe6-4dbd-be70-0def2f6da7a8")
+		(pin "1"
+			(uuid "049a2d6d-d309-4b92-96e9-6fc824e62ff7")
 		)
-		(pin "7"
-			(uuid "89075a0e-11e1-4896-930a-a9858916d75a")
+		(instances
+			(project "orpholl"
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
 		)
-		(pin "20"
-			(uuid "1b7e0570-1a6c-4a94-ae01-634f5ddc0632")
+	)
+	(symbol
+		(lib_id "MCU_Module:RaspberryPi_Pico")
+		(at 52.07 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dc21d50-fdd1-4564-b70f-eb5539937db3")
+		(property "Reference" "A1"
+			(at 54.2133 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(pin "23"
-			(uuid "66b2847e-158e-47bf-b8a4-049b59d3ccfe")
+		(property "Value" "orpheus Pico"
+			(at 54.2133 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
+			(at 52.07 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
+			(at 52.07 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+			(at 52.07 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "d8ab2dc4-066b-405d-aaf7-609d00646fb3")
+		)
+		(pin "16"
+			(uuid "39560426-3dd8-4ec8-a104-ffdcf2564918")
+		)
+		(pin "17"
+			(uuid "0d7edfcb-3352-4597-b917-cae6bb81b8f0")
 		)
 		(pin "30"
-			(uuid "e965af90-44e5-4d06-9dd2-e049aa4ccdd1")
+			(uuid "c0ad75ad-a798-4afa-82c7-3b24660abe14")
+		)
+		(pin "37"
+			(uuid "b07c3e07-a6c9-423f-b1ae-3685a99e38ad")
+		)
+		(pin "4"
+			(uuid "17bf93d1-3081-4365-adbc-97956b5605ce")
+		)
+		(pin "5"
+			(uuid "9cdf5c2a-da3e-428b-93da-9e2d8632a068")
+		)
+		(pin "19"
+			(uuid "8037a98d-c8fe-4930-8930-2954d358f38b")
+		)
+		(pin "20"
+			(uuid "641cea62-ff03-4323-99a1-adfc22c38783")
+		)
+		(pin "6"
+			(uuid "4d87107c-f97e-4bec-8454-f0a2393a468d")
+		)
+		(pin "7"
+			(uuid "8ac5a324-a038-4e9e-865f-d3f8d4759fea")
+		)
+		(pin "1"
+			(uuid "1dc6c6b6-0b1e-48ca-9d5d-d6c83fe959b8")
+		)
+		(pin "2"
+			(uuid "47fe33f1-8f69-48de-9358-30ea9fa7b7ed")
+		)
+		(pin "9"
+			(uuid "2336ad22-d940-4fb7-a69f-cdcee8d9ed95")
+		)
+		(pin "10"
+			(uuid "1a4def28-0c12-45db-9703-b937e2369504")
+		)
+		(pin "11"
+			(uuid "c11de50b-1ac6-41a9-bc64-eff836c8891b")
+		)
+		(pin "12"
+			(uuid "2e59974f-1f9c-493f-9a5a-f29049487e77")
+		)
+		(pin "14"
+			(uuid "7abdc809-3ef0-43af-b6a8-fb229f91797a")
+		)
+		(pin "36"
+			(uuid "5ce0c9a5-78e9-4e48-b1b7-31eee52ebdd9")
+		)
+		(pin "21"
+			(uuid "c775d310-d793-4b5e-87ee-14e2fd4932d1")
+		)
+		(pin "22"
+			(uuid "daede560-ab3b-4c64-801b-b5271061e150")
+		)
+		(pin "24"
+			(uuid "7ce5ba0e-2cbc-434f-9707-23b7e7a8645e")
+		)
+		(pin "25"
+			(uuid "40aedf49-023a-4338-b88f-d84587a64687")
+		)
+		(pin "26"
+			(uuid "0cbe3c0a-1de6-4850-a707-b7a03bd379cf")
+		)
+		(pin "27"
+			(uuid "eca615c6-a66b-41c4-ad68-0d42441a25f9")
+		)
+		(pin "29"
+			(uuid "5b1265d1-646a-4ed8-8864-ab13a936866a")
+		)
+		(pin "39"
+			(uuid "0ba041b8-0abb-4d1e-b6c6-0b4a3cadd53a")
+		)
+		(pin "40"
+			(uuid "65e2c972-74a4-4cc3-811f-02af9dd044ba")
+		)
+		(pin "13"
+			(uuid "617d811d-bde0-4b85-a5ad-11b025068933")
+		)
+		(pin "18"
+			(uuid "288c4a99-bed0-4606-9164-6c3801d53870")
+		)
+		(pin "23"
+			(uuid "3d862d3f-3ff4-4404-a6f8-298ae5a5da90")
 		)
 		(pin "28"
-			(uuid "9640c04a-ccdc-42a1-8de4-9735930f3459")
+			(uuid "900ce23f-8873-452d-a233-897334042572")
+		)
+		(pin "3"
+			(uuid "d299158a-19c7-4a91-8d46-bd1787658628")
+		)
+		(pin "38"
+			(uuid "71938cf0-2082-4ed9-8fe2-43c8a4d4e9ce")
+		)
+		(pin "8"
+			(uuid "55fcc74f-af75-4ed9-80c7-b9c650fd8dad")
+		)
+		(pin "35"
+			(uuid "75df44aa-42be-45d8-91b1-1890b831e93e")
+		)
+		(pin "31"
+			(uuid "2c3f23e0-11e4-457a-b789-cf2a02f8661f")
+		)
+		(pin "32"
+			(uuid "22bf1d8f-5c5d-451d-9a17-0fdec8ad6d8d")
+		)
+		(pin "34"
+			(uuid "19c8dda0-9468-4668-bebd-264c0c75e8e7")
+		)
+		(pin "33"
+			(uuid "97d8741e-a423-4fb7-995b-8295925ab2f0")
 		)
 		(instances
 			(project ""
 				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
 					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2d488bb-6c62-44a9-b807-1623111d016d")
+		(property "Reference" "#PWR01"
+			(at 157.48 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 157.48 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d136b0c-097e-4180-b238-114258386977")
+		)
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 271.78 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2e216aa-f8e2-44b4-95a3-7d7f33d68c84")
+		(property "Reference" "#PWR07"
+			(at 271.78 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 271.78 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 271.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 271.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 271.78 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f88e9d81-5ce2-4e94-80ac-bfaeea0089f9")
+		)
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 279.4 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "daf37fbb-dfbb-4704-833f-bc865ced455f")
+		(property "Reference" "#PWR06"
+			(at 279.4 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 279.4 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 279.4 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 279.4 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 279.4 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "878eca58-7f27-4387-ae4f-f9df245af7fb")
+		)
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 46.99 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e2269487-39d4-48c9-9cdc-071513e06227")
+		(property "Reference" "#PWR08"
+			(at 46.99 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 46.99 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 46.99 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5450b052-37a0-44fe-9943-818503f873c9")
+		)
+		(instances
+			(project ""
+				(path "/afdeb5c5-05ed-4865-aaa9-d6927f7d44aa"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
