@@ -1,4 +1,4 @@
-# orpholl
+# orph
 
 This is orph. A doll version of orpheus that spins a sword. Theres some dark lore behind to why only half his body exists.
 Essentially, she got into a car crash and lost half his body. She is now seeking revenge in order to see who did this to her, hence the sword.
