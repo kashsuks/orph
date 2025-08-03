@@ -5,7 +5,7 @@ Essentially, she got into a car crash and lost half his body. She is now seeking
 
 TL;DR Orph is a replica of Hack Club's mascot, Orpheus that spins a carboard sword using a servo.
 
-There is a video demo made by us! ![Video](https://www.youtube.com/watch?v=v-YVZJ4Rpic)
+There is a video demo made by us! [Video](https://www.youtube.com/watch?v=v-YVZJ4Rpic)
 
 ## Images
 
